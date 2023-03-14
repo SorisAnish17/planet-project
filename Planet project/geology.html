@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="surface geology" />
+    <title>Surface Geology</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>THE PLANETS</h1>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="mercury.html">MERCURY</a></li>
+          <li><a href="venus.html">VENUS</a></li>
+          <li><a href="index.html">EARTH</a></li>
+          <li><a href="mars.html">MARS</a></li>
+          <li><a href="jupiter.html">JUPITER</a></li>
+          <li><a href="saturn.html">SATURN</a></li>
+          <li><a href="Uranus.html">URANUS</a></li>
+          <li><a href="neptune.html">NEPTUNE</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </header>
+    <hr />
+    <div class="mobile">
+      <ul>
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="internal-view.html">Internal View</a></li>
+        <li><a href="geology.html">Surface Geology</a></li>
+      </ul>
+      <hr />
+    </div>
+    <div class="content">
+      <img src="images/geo.webp" width="455px" height="450px;" />
+      <div class="planet">
+        <h2>EARTH</h2>
+        <p>
+          Geology describes the structure of the Earth on and beneath its
+          surface, and the processes that have shaped that structure. Geologists
+          study the mineralogical composition of rocks in order to get insight
+          into their history of formation. Geology determines the relative ages
+          of rocks found at a given location; geochemistry (a branch of geology)
+          determines their absolute ages.[3] By combining various petrological,
+          crystallographic and paleontological tools, geologists are able to
+          chronicle the geological history of the Earth as a whole. One aspect
+          is to demonstrate the age of the Earth. Geology provides evidence for
+          plate tectonics, the evolutionary history of life, and the Earth's
+          past climates.
+        </p>
+        <p>
+          Source: <a href="https://en.wikipedia.org/wiki/Earth">Wikipedia</a>
+        </p>
+        <div class="detail">
+          <ul>
+            <li><a href="index.html">01 Overview</a></li>
+            <li><a href="internal-view.html">02 Internal View</a></li>
+            <li><a href="geology.html">03 Surface Geology</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sub-container">
+      <div class="child-1">
+        <p>ROTATION TIME</p>
+        <h1>0.99 DAYS</h1>
+      </div>
+      <div class="child-2">
+        <p>REVOLUTION TIME</p>
+        <h1>365.26 DAYS</h1>
+      </div>
+      <div class="child-3">
+        <p>RADIUS</p>
+        <h1>6,371 KM</h1>
+      </div>
+      <div class="child-4">
+        <p>AVERAGE TEMP</p>
+        <h1>16°C</h1>
+      </div>
+    </div>
+    <script>
+      var menuitems = document.getElementById("menuitems");
+      menuitems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "700px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>

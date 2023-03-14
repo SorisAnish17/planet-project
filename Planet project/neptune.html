@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="NEPTUNE" />
+    <title>NEPTUNE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>THE PLANETS</h1>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="mercury.html">MERCURY</a></li>
+          <li><a href="venus.html">VENUS</a></li>
+          <li><a href="index.html">EARTH</a></li>
+          <li><a href="mars.html">MARS</a></li>
+          <li><a href="jupiter.html">JUPITER</a></li>
+          <li><a href="saturn.html">SATURN</a></li>
+          <li><a href="Uranus.html">URANUS</a></li>
+          <li><a href="neptune.html">NEPTUNE</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </header>
+    <hr />
+    <div class="content">
+      <img src="images/neptune.png" width="550px" height="550px;" id="saturn" />
+      <div class="planet">
+        <h2>NEPTUNE</h2>
+        <p>
+          Neptune is the eighth planet from the Sun and the farthest known
+          planet in the Solar System. It is the fourth-largest planet in the
+          Solar System by diameter, the third-most-massive planet, and the
+          densest giant planet. It is 17 times the mass of Earth, and slightly
+          more massive than its near-twin Uranus. Neptune is denser and
+          physically smaller than Uranus because its greater mass causes more
+          gravitational compression of its atmosphere. Being composed primarily
+          of gases and liquids, it has no well-defined solid surface. The planet
+          orbits the Sun once every 164.8 years at an average distance of 30.1
+          astronomical units (4.5 billion kilometres; 2.8 billion miles).
+        </p>
+        <p>
+          Source: <a href="https://en.wikipedia.org/wiki/Earth">Wikipedia</a>
+        </p>
+        <div class="detail">
+          <ul>
+            <li><a href="#">01 Overview</a></li>
+            <li><a href="#">02 Internal View</a></li>
+            <li><a href="#">03 Surface Geology</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="sub-container">
+      <div class="child-1">
+        <p>ROTATION TIME</p>
+        <h1>165 years</h1>
+      </div>
+      <div class="child-2">
+        <p>REVOLUTION TIME</p>
+        <h1>60,190 DAYS</h1>
+      </div>
+      <div class="child-3">
+        <p>RADIUS</p>
+        <h1>24.764 KM</h1>
+      </div>
+      <div class="child-4">
+        <p>AVERAGE TEMP</p>
+        <h1>−265 °C</h1>
+      </div>
+    </div>
+    <script>
+      var menuitems = document.getElementById("menuitems");
+      menuitems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "700px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
