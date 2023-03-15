@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="venus" />
+    <title>Venus</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>THE PLANETS</h1>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="mercury.html">MERCURY</a></li>
+          <li><a href="venus.html">VENUS</a></li>
+          <li><a href="index.html">EARTH</a></li>
+          <li><a href="mars.html">MARS</a></li>
+          <li><a href="jupiter.html">JUPITER</a></li>
+          <li><a href="saturn.html">SATURN</a></li>
+          <li><a href="Uranus.html">URANUS</a></li>
+          <li><a href="neptune.html">NEPTUNE</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </header>
+    <hr />
+    <div class="content">
+      <img src="images/venus.png" width="455px" height="500px;" />
+      <div class="planet">
+        <h2>VENUS</h2>
+        <div class="tablet">
+        <p>
+          Venus is the second planet from the Sun. It is sometimes called
+          Earth's "sister" or "twin" planet as it is almost as large and has a
+          similar composition. As an interior planet to Earth, Venus (like
+          Mercury) appears in Earth's sky never far from the Sun, either as
+          morning star or evening star. Aside from the Sun and Moon, Venus is
+          the brightest natural object in Earth's sky, capable of casting
+          visible shadows on Earth in dark conditions and being visible to the
+          naked eye in broad daylight.Temperatures are cooler in the upper
+          atmosphere
+        </p id="tablet-hide">
+        <p>
+          Source: <a href="https://en.wikipedia.org/wiki/Earth">Wikipedia</a>
+        </p>
+        <div class="detail">
+          <ul>
+            <li><a href="#">01 Overview</a></li>
+            <li><a href="#">02 Internal View</a></li>
+            <li><a href="#">03 Surface Geology</a></li>
+          </ul>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="sub-container">
+      <div class="child-1">
+        <p>ROTATION TIME</p>
+        <h1>75 DAYS</h1>
+      </div>
+      <div class="child-2">
+        <p>REVOLUTION TIME</p>
+        <h1>275.26 DAYS</h1>
+      </div>
+      <div class="child-3">
+        <p>RADIUS</p>
+        <h1>6,052 km</h1>
+      </div>
+      <div class="child-4">
+        <p>AVERAGE TEMP</p>
+        <h1>43° C</h1>
+      </div>
+    </div>
+    <script>
+      var menuitems = document.getElementById("menuitems");
+      menuitems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuitems.style.maxHeight == "0px") {
+          menuitems.style.maxHeight = "700px";
+        } else {
+          menuitems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
