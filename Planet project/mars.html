@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="Mars" />
+    <title>Mars</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>THE PLANETS</h1>
+      <nav>
+        <ul id="menuitems">
+          <li><a href="mercury.html">MERCURY</a></li>
+          <li><a href="venus.html">VENUS</a></li>
+          <li><a href="index.html">EARTH</a></li>
+          <li><a href="mars.html">MARS</a></li>
+          <li><a href="jupiter.html">JUPITER</a></li>
+          <li><a href="saturn.html">SATURN</a></li>
+          <li><a href="Uranus.html">URANUS</a></li>
+          <li><a href="neptune.html">NEPTUNE</a></li>
+        </ul>
+      </nav>
+      <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+    </header>
+    <hr />
+    <div class="content">
+      <img src="images/mars.png" width="455px" height="500px;" />
+      <div class="planet">
+        <h2>Mars</h2>
+        <div class="tablet">
+          <p>
+            Mars is the fourth planet from the Sun and the second-smallest
+            planet in the Solar System, larger only than Mercury. In the English
+            language, Mars is named for the Roman god of war. Mars is a
+            terrestrial planet with a thin atmosphere and has a crust primarily
+            composed of elements similar to Earth's crust, as well as a core
+            made of iron and nickel. Mars has surface features such as impact
+            craters, valleys, dunes, and polar ice caps. Mars has two small,
+            irregularly shaped moons, Phobos and Deimos.Some of the most notable
+            surface features on Mars include Olympus Mons, the largest volcano
+            and highest-known mountain in the Solar System.
+          </p>
+          <p id="tablet-hide">
+            Source: <a href="https://en.wikipedia.org/wiki/Earth">Wikipedia</a>
+          </p>
+          <div class="detail">
+            <ul>
+              <li><a href="#">01 Overview</a></li>
+              <li><a href="#">02 Internal View</a></li>
+              <li><a href="#">03 Surface Geology</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-container">
+      <div class="child-1">
+        <p>ROTATION TIME</p>
+        <h1>23.9 hours</h1>
+      </div>
+      <div class="child-2">
+        <p>REVOLUTION TIME</p>
+        <h1>687 DAYS</h1>
+      </div>
+      <div class="child-3">
+        <p>RADIUS</p>
+        <h1>3,390 km</h1>
+      </div>
+      <div class="child-4">
+        <p>AVERAGE TEMP</p>
+        <h1>60° C</h1>
+      </div>
+    </div>
+  </body>
+  <script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (menuitems.style.maxHeight == "0px") {
+        menuitems.style.maxHeight = "700px";
+      } else {
+        menuitems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</html>
