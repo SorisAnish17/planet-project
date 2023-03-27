@@ -52,6 +52,7 @@ header {
   justify-content: center;
   margin: 50px;
   margin-left: 180px;
+  margin-top:25px;
   gap: 260px;
   flex-wrap: wrap;
 }
